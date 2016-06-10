@@ -1,0 +1,9 @@
+{
+  "openwhisk": {
+    "packageParameters": [{
+        "jiraUsername": "admin",
+        "jiraPassword": "passw0rd",
+        "jiraHost": "openwhisk.atlassian.net"
+      }]
+  }
+}

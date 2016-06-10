@@ -1,0 +1,1 @@
+curl -D- -u admin:passw0rd --proxy localhost:8888 -X POST --data '{"fields": {"project":{"key": "MYAW"},"summary": "REST ye merry gentlemen.","description": "Creating of an issue using project keys and issue type names using the REST API","issuetype": {"name": "Bug"}}}' -H "Content-Type: application/json" https://openwhisk.atlassian.net/rest/api/2/issue/

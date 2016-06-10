@@ -1,0 +1,1 @@
+wsk -v action invoke -b jirajs/createIssue -p issue '{"fields": {"project":{"key": "MYAW"},"summary": "This issue created by OpenWhisk.","description": "Creating an issue for a bug using OpenWhisk","issuetype": {"name": "Bug"}}}' 

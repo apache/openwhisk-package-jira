@@ -1,0 +1,12 @@
+{
+  "openwhisk": {
+    "triggers": [{
+      "name": "issueTrigger"
+    }],
+    "rules": [{
+      "name": "issueCreatedRule",
+      "trigger": "issueTrigger",
+      "action": "handleIssueCreated",
+    }]
+  }
+}
