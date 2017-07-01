@@ -1,0 +1,12 @@
+# A Travis CI configuration file.
+sudo: required
+
+language: scala
+scala:
+   - 2.11.6
+
+before_install:
+  - ./tools/travis/setup.sh
+
+script:
+  - ./tools/travis/build.sh

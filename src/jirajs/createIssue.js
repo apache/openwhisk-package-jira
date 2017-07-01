@@ -1,3 +1,6 @@
+// Licensed to the Apache Software Foundation (ASF) under one or more contributor
+// license agreements; and to You under the Apache License, Version 2.0.
+
 /***********************************************************
 
 Create Issue in Jira.  Issue is encoded as a JSON object
@@ -6,7 +9,7 @@ in the form:
 {
     "fields": {
        "project":
-       { 
+       {
           "key": "TEST"
        },
        "summary": "REST ye merry gentlemen.",
@@ -39,12 +42,12 @@ function main(params) {
   if (!params.issue) {
     return whisk.error("No issue data to create")
   }
-  
+
   var issue = params.issue
   var username = params.jiraUsername
   var password = params.jiraPassword
   var url = 'https://' + username+":" + password + '@'+params.jiraHost+"/rest/api/2/issue/"
-  
+
   console.log("Got url " + url)
 
   var options = {
